@@ -14,36 +14,7 @@ About::About(QWidget *parent) :
     ui(new Ui::About)
 {
     ui->setupUi(this);
-
-
-    QString versionBuilder = QString("Version: ") + SW_VERSION;
-    if (QSslSocket::supportsSsl()) {
-        versionBuilder.append(" / SSL: ");
-        versionBuilder.append(QSslSocket::sslLibraryBuildVersionString());
-    }
-    ui->buidDateLabel->setText(versionBuilder);
-
-    QIcon mIcon(":pslogo.png");
     setWindowTitle("About Packet Sender");
-    setWindowIcon(mIcon);
-
-    setWindowFlags(this->windowFlags() & ~Qt::WindowContextHelpButtonHint);
-
-
-
-    QPalette pal = ui->psLinkButton->palette();
-    pal.setColor(QPalette::Button, QColor(Qt::white));
-    ui->psLinkButton->setAutoFillBackground(true);
-    ui->psLinkButton->setPalette(pal);
-
-
-    ui->psLinkButton->setStyleSheet(HYPERLINKSTYLE);
-    ui->psLinkButton->setIcon(QIcon(":pslogo.png"));
-    ui->psLinkButton->setFlat(true);
-    ui->psLinkButton->setCursor(Qt::PointingHandCursor);
-    connect(ui->psLinkButton, SIGNAL(clicked()),
-            this, SLOT(gotoPacketSenderDotCom()));
-
 }
 
 About::~About()

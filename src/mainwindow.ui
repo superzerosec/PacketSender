@@ -450,7 +450,6 @@
     <property name="title">
      <string>&amp;File</string>
     </property>
-    <addaction name="actionSettings"/>
     <addaction name="actionImport_Packets"/>
     <addaction name="actionExport_Packets"/>
     <addaction name="actionExit"/>
@@ -460,30 +459,8 @@
      <string>&amp;Help</string>
     </property>
     <addaction name="actionAbout"/>
-    <addaction name="actionHelp"/>
-    <addaction name="actionFollow_NagleCode"/>
-    <addaction name="actionConnect_on_LinkedIn"/>
-    <addaction name="actionDonate_Thank_You"/>
-   </widget>
-   <widget class="QMenu" name="menuTools">
-    <property name="title">
-     <string>&amp;Tools</string>
-    </property>
-    <addaction name="actionCloud"/>
-    <addaction name="actionSubnet_Calculator"/>
-    <addaction name="actionIntense_Traffic_Generator"/>
-    <addaction name="actionAndroid_App"/>
-    <addaction name="actioniOS_App"/>
-   </widget>
-   <widget class="QMenu" name="menuMulitcast">
-    <property name="title">
-     <string>&amp;Multicast</string>
-    </property>
-    <addaction name="actionJoin_IPv4"/>
    </widget>
    <addaction name="menuFile"/>
-   <addaction name="menuTools"/>
-   <addaction name="menuMulitcast"/>
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
